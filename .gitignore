@@ -1,2 +1,8 @@
 
 .DS_Store
+
+rubiks_cube/__pycache__/
+
+training/__pycache__/
+
+umojahack2023.egg-info/
