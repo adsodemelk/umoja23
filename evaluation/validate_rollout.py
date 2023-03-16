@@ -115,9 +115,7 @@ def validate_and_score_rollouts(
     return final_results_public
 
 
-def main_validation(
-    results_path: str, public_seeds: List[int]
-) -> float:
+def main_validation(results_path: str, public_seeds: List[int]) -> float:
     scores_per_env_config_public = validate_and_score_rollouts(
         env_configs=[EASY_ENV_CONFIG, MEDIUM_ENV_CONFIG, HARD_ENV_CONFIG],
         env_config_names=["easy", "medium", "hard"],

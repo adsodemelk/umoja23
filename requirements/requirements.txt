@@ -2,12 +2,12 @@ grpcio==1.45.0
 gym==0.22.0
 jupyterlab
 matplotlib>=3.3.4
+numpy==1.23.5
 ray[rllib,default]==2.2.0
 tensorboard==2.11.2
 tensorboardX==2.6
 tensorflow==2.11.0
 tensorflow-io==0.30.0
 tensorflow-probability==0.19.0
-torch # todo: temporary fix to make ray 2.2.0 happy
-numpy==1.23.5
+torch # todo: fix to make ray 2.2.0 happy
 tqdm==4.65.0
