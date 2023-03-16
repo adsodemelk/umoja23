@@ -72,7 +72,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--num_scrambles_on_reset",
         type=int,
-        default=2,
+        default=1,
         help="Number of scrambles applied to cube whenever the env is reset",
     )
     parser.add_argument(
@@ -84,7 +84,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--num_iterations",
         type=int,
-        default=1,
+        default=10,
         help="Number of iterations to train for (default 1)",
     )
     parser.add_argument(

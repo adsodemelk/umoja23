@@ -12,5 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PUBLIC_SEEDS = list(range(2))
-PRIVATE_SEEDS = list(range(2))
+PUBLIC_SEEDS = list(range(1000))

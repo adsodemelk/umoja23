@@ -18,7 +18,7 @@ from typing import Dict, List
 from ray.rllib.algorithms import Algorithm, AlgorithmConfig
 from ray.rllib.algorithms.ppo import PPO
 
-from evaluation.seeds import PRIVATE_SEEDS, PUBLIC_SEEDS
+from evaluation.seeds import PUBLIC_SEEDS
 from rubiks_cube.env import RubiksCube, create_flattened_env, dump_cube
 from rubiks_cube.flat_action_wrapper import unflatten_action
 from training.configs import (
@@ -120,13 +120,9 @@ if __name__ == "__main__":
         default="PPO",
         help="Name of agent (default PPO)",
     )
-    parser.add_argument("--public_seeds", dest="public_seeds", action="store_true")
-    parser.set_defaults(public_seeds=True)
-
     args = parser.parse_args()
-    SEEDS = PUBLIC_SEEDS if args.public_seeds else PRIVATE_SEEDS
     main_rollout(
-        seeds=SEEDS,
+        seeds=PUBLIC_SEEDS,
         checkpoint_path=args.checkpoint_path,
         results_path=args.results_path,
         agent_name=args.agent_name,

@@ -23,20 +23,23 @@ FLATTEN_ACTIONS = False
 EASY_ENV_CONFIG = {
     "step_limit": 10,
     "reward_function_type": "sparse",
-    "num_scrambles_on_reset": 2,
+    "num_scrambles_on_reset": 1,
 }
 
 MEDIUM_ENV_CONFIG = {
     "step_limit": 10,
     "reward_function_type": "sparse",
-    "num_scrambles_on_reset": 8,
+    "num_scrambles_on_reset": 4,
 }
 
 HARD_ENV_CONFIG = {
-    "step_limit": 10,
+    "step_limit": 20,
     "reward_function_type": "sparse",
-    "num_scrambles_on_reset": 20,
+    "num_scrambles_on_reset": 8,
 }
+
+CONFIG_WEIGHTINGS = {"easy": 1, "medium": 2, "hard": 3}
+
 
 CUSTOM_MODEL_CONFIG = {
     "cube_embed_dim": 4,
