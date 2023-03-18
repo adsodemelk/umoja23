@@ -47,11 +47,6 @@ setup(
     install_requires=_parse_requirements(
         os.path.join(_CURRENT_DIR, "requirements", "requirements.txt")
     ),
-    extras_require={
-        "dev": _parse_requirements(
-            os.path.join(_CURRENT_DIR, "requirements", "requirements-dev.txt")
-        ),
-    },
     zip_safe=False,
     include_package_data=True,
 )
